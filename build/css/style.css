@@ -193,7 +193,8 @@ a:hover, a:focus {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  height: 400px; }
   .intro_list {
     border: 1px solid transparent;
     border-radius: 25px;
