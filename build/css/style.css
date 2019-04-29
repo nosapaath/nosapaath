@@ -194,7 +194,8 @@ a:hover, a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 400px; }
+  height: 400px;
+  margin-bottom: 5rem; }
   .intro_list {
     border: 1px solid transparent;
     border-radius: 25px;
@@ -241,7 +242,10 @@ a:hover, a:focus {
   .web_design_title {
     -webkit-transform: rotateZ(-90deg);
             transform: rotateZ(-90deg);
-    color: transparent; }
+    color: transparent;
+    position: absolute;
+    left: 20%;
+    top: 40%; }
   .web_design-right {
     font-size: 1.5rem;
     margin-right: 1rem; }

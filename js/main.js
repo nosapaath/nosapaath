@@ -25,7 +25,7 @@ $(function(){
   $(window).on('scroll' , function(){
     let scroll_pos = $(window).scrollTop();
     // const element_pos = $("#pinkBox")[0].offsetTop;
-    if (scroll_pos < 100) {
+    if (scroll_pos < 120) {
       $("#pinkBox").css({width:'50%'});
       $(".greeting").css({left:'100px'});
       $("#firstTitle").css({fontSize:'2rem', color:'transparent'});
@@ -41,7 +41,7 @@ $(function(){
 // when id showProject distance from top of screen is halfway, start animation
   $(window).on('scroll', function(){
     const topToSection = window.pageYOffset + window.outerHeight;
-    const projectSection = $('#showProject')[0].offsetTop;
+    const projectSection = $('#showProject')[0].offsetTop + 200;
     const n = $('.projectJs').length;
     console.log(n);
     if(topToSection >= projectSection){

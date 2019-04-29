@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   height:400px;
+  margin-bottom: 5rem;
   &_list {
     border: 1px solid transparent;
     border-radius: 25px;
@@ -58,6 +59,9 @@
   &_title{
     transform: rotateZ(-90deg);
     color: transparent;
+    position: absolute;
+    left:20%;
+    top:40%;
   }
   &-right {
     font-size: 1.5rem;
