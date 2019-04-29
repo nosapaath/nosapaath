@@ -1,0 +1,65 @@
+.hero {
+  height: 90vh;
+  &_heading {
+    color: black;
+    text-transform: uppercase;
+    font-size: 5rem;
+    transition-duration: 2s;
+    transition-delay: 2s;
+  }
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  &_list {
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: $brand-blue;
+    background-position-y: -1px;
+    bottom: -1px;
+    padding: .5em 2em;
+  }
+  li {
+    line-height: 1.5rem;
+  }
+}
+
+.intro_left {
+  width: 50%;
+  transition: width .7s ease-in;
+  position: relative;
+  &_inside {
+    height: 100%;
+    background-color: $brand-blue;
+  }
+}
+
+.greeting {
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  left:100px;
+  padding: 2rem;
+  transition-duration: 1s;
+  &_hide {
+    display: hidden;
+    transition-delay: 2s;
+  }
+}
+
+.web_design {
+  position: absolute; 
+  color: white;
+  height: 100%;
+  justify-content: space-between !important;
+  display: flex;
+  max-width: 100%;
+  &_title{
+    transform: rotateZ(-90deg);
+    color: transparent;
+  }
+  &-right {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+}

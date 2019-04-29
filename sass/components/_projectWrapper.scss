@@ -1,0 +1,27 @@
+.project {
+  color: white;
+  height: 100%;
+  width: 0%;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  &_grid {
+    display: grid; 
+    grid-template-columns: 1fr 40%;
+  }
+  &_content {
+    text-align: center;
+    padding: 1em;
+  }
+  &-blue {
+    background-color: $brand-blue;
+  }
+  &_title {
+    padding: 1rem;
+    color: $brand-blue;
+  }
+}
+
+.projectJs {
+  transition: width .5s ease-in;
+}
