@@ -38,16 +38,22 @@ $(function(){
     }
   });
 
-// when id showProject distance from top of screen is halfway, start animation
-  $(window).on('scroll', function(){
-    const topToSection = window.pageYOffset + window.outerHeight;
-    const projectSection = $('#showProject')[0].offsetTop + 200;
-    const n = $('.projectJs').length;
-    console.log(n);
-    if(topToSection >= projectSection){
-      $('.projectJs').css({width:'100%'});
-    } else {
-      $('.projectJs').css({width:'0%'});
-    }
-  })
+  function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+  
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+  
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+
+  $(window).on('scroll', function() {
+    $(".lightSaber").each(function() {
+      if (isScrolledIntoView($(this))) {
+        $(this).addClass("swoosh");
+      }
+    });
+  });
+
 });

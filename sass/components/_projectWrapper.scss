@@ -1,27 +1,43 @@
-.project {
-  color: white;
-  height: 100%;
-  width: 0%;
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  &_grid {
-    display: grid; 
-    grid-template-columns: 1fr 40%;
+.projects {
+  p, ul {
+    font-weight: 100;
+    margin-bottom: .5em;
   }
-  &_content {
-    text-align: center;
-    padding: 1em;
+  &_card {
+    background-color: #ffebae;
+    &_info {
+      h2 {
+        font-size: 2em;
+        font-weight: 500;
+      }
+    }
+    &_btn {
+      button {
+      padding: .5em 2em;
+      background: #ffebae;
+      }
+    }
+    &_process {
+      h3 {
+        font-size: 1.2rem
+      }
+    }
   }
-  &-blue {
-    background-color: $brand-blue;
+  @include for-phone-only {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    &_card {
+      border: 1px solid white;
+      width: 100%;
+      margin-bottom: 1rem;
+      &_info {
+        margin: 1rem 1rem;
+        padding: 1.5rem 2rem;
+        background-color: white;
+      }
+    }
   }
-  &_title {
-    padding: 1rem;
-    color: $brand-blue;
-  }
-}
-
-.projectJs {
-  transition: width .5s ease-in;
 }

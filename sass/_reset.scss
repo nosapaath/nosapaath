@@ -58,6 +58,7 @@ html {
 
 button {
 	background-color: transparent;
+	border: none;
 	&:focus {
 		outline: none;
 	}
@@ -65,4 +66,8 @@ button {
 
 h1 {
 	font-size: 2rem;
+}
+
+p {
+	font-weight: 300;
 }
