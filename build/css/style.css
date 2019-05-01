@@ -278,7 +278,8 @@ a:hover, a:focus {
     margin-right: 1rem; }
 
 .about {
-  text-align: center; }
+  text-align: center;
+  padding: 0 10px; }
   .about h2 {
     font-size: 1.7rem;
     text-transform: uppercase;
@@ -374,7 +375,11 @@ a:hover, a:focus {
     font-weight: 500; }
   .projects_card_btn button {
     padding: .5em 2em;
-    background: #ffebae; }
+    background: #ffebae;
+    margin: .1rem; }
+  .projects_card_btn button:active, .projects_card_btn a:active {
+    background: #00dbde;
+    color: white; }
   .projects_card_process h3 {
     font-size: 1.2rem; }
 
